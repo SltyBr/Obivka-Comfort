@@ -1,0 +1,55 @@
+body
+  font-family: "Montserrat", sans-serif
+  font-size: 16px
+  font-weight: 600
+  color: $water
+
+ul, h1, h2, h3, h4, p, img, a
+  margin: 0
+  padding: 0
+
+li
+  list-style-type: none
+
+a
+  text-decoration: none
+
+img
+  max-width: 100%
+  object-fit: cover
+
+.title
+  font-size: 28px
+  line-height: 34px
+  color: $water
+  margin-bottom: 16px
+  margin-top: 0
+  &__item
+    width: 60px
+    height: 36px
+    background: url('../images/couch.svg') no-repeat
+    margin: auto
+    position: relative
+    display: flex
+    align-items: center
+    margin-bottom: 26px
+    &::after
+      position: absolute
+      content: ''
+      width: 45px
+      height: 3px
+      background: $warning
+      right: -112%
+    &::before
+      position: absolute
+      content: ''
+      width: 45px
+      height: 3px
+      background: $warning
+      left: -112%
+.text
+  font-size: 14px
+  font-weight: normal
+  line-height: 17px
+  color: $water
+  margin-bottom: 36px

@@ -1,0 +1,29 @@
+<!-- <div class="slider__item">
+          <h3 class="slider__title">
+            Мягкая мебель
+          </h3>
+          <img class="slider__image" src="../images/slider-item-1.jpg" alt="slider-image">
+          <a href="#" class="slider__details">Подробнее</a>
+        </div>
+        <div class="slider__item">
+          <h3 class="slider__title">
+            Мягкая мебель
+          </h3>
+          <img class="slider__image" src="../images/slider-item-1.jpg" alt="slider-image">
+          <a href="#" class="slider__details">Подробнее</a>
+        </div>
+        <div class="slider__item">
+          <h3 class="slider__title">
+            Мягкая мебель
+          </h3>
+          <img class="slider__image" src="../images/slider-item-1.jpg" alt="slider-image">
+          <a href="#" class="slider__details">Подробнее</a>
+        </div>
+        <div class="slider__item">
+          <h3 class="slider__title">
+            Мягкая мебель
+          </h3>
+          <img class="slider__image" src="../images/slider-item-1.jpg" alt="slider-image">
+          <a href="#" class="slider__details">Подробнее</a>
+        </div>  
+      </div> -->

@@ -1,0 +1,99 @@
+.section
+  &-work
+    background: $asphalt
+    &__item
+      margin-bottom: 50px
+    &__image
+      position: relative
+      width: 80%
+      & img
+        object-fit: cover
+        position: absolute
+        top: 0
+        left: 0
+        box-shadow: -30px 30px 0px 0px $warning
+    &__block
+      justify-content: flex-end
+    &__form
+      position: relative
+      background: url('../images/form-bg.jpg') no-repeat center/cover
+      border: 5px solid $warning
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: $light
+        opacity: 0.5
+.info
+  &-item
+    flex: 0 1 calc(100% / 12 * 6 - 40px)
+    margin: 20px
+      
+    &__title
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 9px
+    &__subtitle
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 6px
+    &__text
+      font-style: italic
+      font-weight: normal
+      font-size: 16px
+      line-height: 20px
+
+.work
+  &__form
+    display: flex
+    position: relative
+    max-width: 1000px
+    margin: 0 auto
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-top: 54px
+    padding-bottom: 16px
+    z-index: 10
+  &__policy
+    flex-basis: 100%
+    text-align: center
+    margin-top: 19px
+    &-label
+      color: #000000
+      font-weight: 700
+  &__input
+    width: 100%
+    &-group
+      flex: 0 1 calc(100%/3)
+  &__button
+    background-color: rgba(0, 0, 0, 0.4)
+    border: 4px solid $warning
+    line-height: 0
+    color: $water
+    border-radius: 5px
+    
+
+.form
+  font-size: 15px
+  line-height: 18px
+  &__label
+    display: block
+    margin-bottom: 3px
+    color: #000000
+    font-weight: 700
+.input
+  border: none
+  border-bottom: 1px solid $water
+  background-color: transparent
+  color: #000000
+  font-weight: 700
+  &::placeholder
+    color: #000000
+    font-weight: 700
+    opacity: 0.5
+  &__work
+    
