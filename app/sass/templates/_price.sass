@@ -1,0 +1,24 @@
+.section
+  &-price
+    &__block
+
+    &__title
+
+    &__coast
+      color: $juice
+    &__item
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      font-weight: bold
+      font-size: 18px
+      line-height: 22px
+      position: relative
+      margin-bottom: 30px  
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 1px
+        background: $asphalt
+        bottom: -2px

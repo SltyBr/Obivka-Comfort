@@ -65,6 +65,17 @@
     &-label
       color: #000000
       font-weight: 700
+    &-checkbox
+      appearance: none
+      position: absolute
+      padding-left: 1.7em
+      &--custom
+        position: absolute
+        width: 20px
+        height: 20px
+        background: url('../images/checkbox-not-checked.svg')
+        border-radius: 5px
+        margin-left: -1.7em
   &__input
     width: 100%
     &-group
@@ -76,7 +87,11 @@
     color: $water
     border-radius: 5px
     
-
+.work__policy-checkbox:checked + .work__policy-checkbox--custom
+  background: url('../images/checkbox.svg')
+.work__policy-checkbox:focus + .work__policy-checkbox--custom
+  outline: 2px solid $navy
+  
 .form
   font-size: 15px
   line-height: 18px

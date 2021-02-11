@@ -1,0 +1,109 @@
+.section
+  &-questions
+    background: $asphalt
+    &__list
+      max-width: 800px
+      margin: 0 auto
+      padding-bottom: 70px
+    &__item
+      background: $light
+      border-radius: 50px
+      border: 1px solid $warning
+      color: #000000
+      margin-bottom: 45px
+      position: relative
+      &:last-child
+        margin-bottom: 0
+      &::after
+        content: ''
+        position: absolute
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background: $warning url('../images/right-arrow.svg') no-repeat center/50%
+        right: -1px
+        top: 0
+        transform: rotate(90deg)
+    &__image
+      position: relative
+      & img
+        max-width: 95%
+        box-shadow: 33px 33px 0px 0px $navy
+    &__text
+      font-weight: normal
+      font-size: 28px
+      line-height: 34px
+      padding: 7px 0 9px 23px
+    &__form
+      background: $navy
+      width: 60%
+      color: $light
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 30px 150px
+.questions
+  &__form
+    &-title
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      text-transform: uppercase
+      margin-bottom: 22px
+  &__block
+    display: flex
+    margin-bottom: 48px
+  &__label
+    font-weight: normal
+    font-size: 15px
+    line-height: 100%
+    color: rgba(255, 255, 255, 0.5)
+  &__input
+    font-weight: normal
+    font-size: 18px
+    color: $light
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+    width: 70%
+    &--phone
+      width: 100%
+    &--question
+      width: 100%
+    &::placeholder
+      font-weight: normal
+      color: $light
+      opacity: 1
+    &-question
+      width: 100%
+      margin-bottom: 45px
+  &__policy
+    margin-bottom: 23px
+    &-label
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: $light
+    &-checkbox
+      appearance: none
+      position: absolute
+      padding-left: 1.7em
+      &--custom
+        position: absolute
+        width: 20px
+        height: 20px
+        background: url('../images/checkbox-not-checked.svg')
+        border-radius: 5px
+        margin-left: -1.7em
+  &__button
+    background: $warning
+    border-radius: 10px
+    color: $water
+    font-weight: 600
+    font-size: 19px
+    line-height: 15px
+    padding: 10px 40px
+
+.questions__policy-checkbox:checked + .questions__policy-checkbox--custom
+  background: url('../images/checkbox.svg')
+.questions__policy-checkbox:focus + .questions__policy-checkbox--custom
+  outline: 2px solid $navy
+

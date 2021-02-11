@@ -1,3 +1,8 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "ecsstractor_port.bem_nesting": true,
+  "ecsstractor_port.brackets": false,
+  "ecsstractor_port.add_comment": false,
+  "ecsstractor_port.brackets_newline_after": false,
+  "ecsstractor_port.empty_line_before_nested_selector": false
 }
