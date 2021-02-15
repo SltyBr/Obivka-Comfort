@@ -1,8 +1,10 @@
+
+//slider
 const slider = document.querySelector('.swiper-container')
 
 let mySwiper = new Swiper(slider, {
   slidesPerView: 4,
-  spaceBetween: 95,
+  spaceBetween: 60,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -14,4 +16,32 @@ let mySwiper = new Swiper(slider, {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    // when window width is >= 320px
+    140: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    360: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    740: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    960: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
 })
+
+//modal window
+

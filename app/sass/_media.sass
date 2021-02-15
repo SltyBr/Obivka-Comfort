@@ -1,0 +1,91 @@
+@media screen and ( max-width:  1250px)
+  $htmlfz: 12px
+  html
+    font-size: $htmlfz
+  .nav
+    &__item
+      font-size: px-to-rem(18px)
+  .contacts
+    &__phone
+      margin-right: px-to-rem(40px)
+  
+@media screen and ( max-width:  1100px)
+  $htmlfz: 10px
+  html
+    font-size: $htmlfz
+  .contacts
+    &__phone
+      margin-right: px-to-rem(34px)
+    &__svg
+      display: none
+@media screen and ( max-width:  950px)
+  $htmlfz: 8px
+  html
+    font-size: $htmlfz
+  .contacts
+    &__phone
+      margin-right: px-to-rem(10px)
+      font-size: px-to-rem(18px)
+  .nav
+    &__item
+      &:not(:last-child)
+        margin-right: px-to-rem(24px)
+  .hero
+    &__item
+      font-size: 16px
+      line-height: 28px
+  .social
+    &__link
+      width: px-to-rem(60px)
+      height: px-to-rem(60px)
+  .slider
+    &__title
+      font-size: px-to-rem(30px)
+    &__link
+      font-size: px-to-rem(30px)
+@media screen and ( max-width:  769px)
+  .nav
+    display: none
+  .contacts
+    width: 40%
+    justify-content: space-between
+    &__phone
+      margin-right: px-to-rem(2px)
+    &__svg
+      display: block
+  .container
+    padding: 0 px-to-rem(20px)
+@media screen and ( max-width:  560px)
+  .contacts
+    width: 65%
+    &__phone
+      margin-right: 0
+  .hero
+    height: 90vh
+  .button
+    &--yel
+      width: 58%
+      font-size: 14px
+      border: 2px solid $navy
+@media screen and ( max-width:  500px)
+  .hero
+    &__title
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(50px)
+  .section
+    padding-top: px-to-rem(45px)
+@media screen and ( max-width:  360px)
+  .contacts
+    width: 85%
+    justify-content: flex-end
+    &__button
+      display: none
+    &__svg
+      display: none
+  .slider
+    &__title
+      font-size: px-to-rem(25px)
+@media screen and ( max-width:  280px)
+  .button
+    &--yel
+      font-size: 12px

@@ -1,20 +1,30 @@
 .menu
   display: flex
   align-items: center
-  padding: 11px 0
+  padding: px-to-rem(11px) 0
+  justify-content: space-between
 .header
   background: $warning
 .logo
-  margin-right: 63px
+
 .nav
   display: flex
   justify-content: space-between
   &__item
     color: $water
-    margin-right: 45px
+    font-size: px-to-rem(14px)
+    &:not(:last-child)
+      margin-right: px-to-rem(45px)
 .contacts
   display: flex
   align-items: center
   &__phone
     color: $water
-    margin-right: 72px
+    margin-right: px-to-rem(72px)
+    display: flex
+    align-items: center
+  &__svg
+    margin-right: 0.4em
+    width: px-to-rem(20px)
+    height: px-to-rem(20px)
+    

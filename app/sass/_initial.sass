@@ -1,8 +1,12 @@
+html
+  font-size: $htmlfz
+
 body
   font-family: "Montserrat", sans-serif
-  font-size: 16px
+  font-size: 1.14rem
   font-weight: 600
   color: $water
+    
 
 ul, h1, h2, h3, h4, p, img, a
   margin: 0
@@ -19,15 +23,15 @@ img
   object-fit: cover
 
 .title
-  font-size: 28px
-  line-height: 34px
+  font-size: px-to-rem(28px)
+  line-height: px-to-rem(34px)
   color: $water
-  margin-bottom: 16px
+  margin-bottom: px-to-rem(16px)
   margin-top: 0
   &__item
-    width: 60px
-    height: 36px
-    background: url('../images/couch.svg') no-repeat
+    width: px-to-rem(60px)
+    height: px-to-rem(36px)
+    background: url('../images/couch.svg') no-repeat center/cover
     margin: auto
     position: relative
     display: flex
@@ -36,20 +40,20 @@ img
     &::after
       position: absolute
       content: ''
-      width: 45px
+      width: px-to-rem(45px)
       height: 3px
       background: $warning
       right: -112%
     &::before
       position: absolute
       content: ''
-      width: 45px
+      width: px-to-rem(45px)
       height: 3px
       background: $warning
       left: -112%
 .text
-  font-size: 14px
-  font-weight: normal
+  font-size: px-to-rem(18px)
+  font-weight: 600
   line-height: 17px
   color: $water
   margin-bottom: 36px
