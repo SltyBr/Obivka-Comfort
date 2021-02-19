@@ -7,6 +7,8 @@ a
 .container
   max-width: px-to-rem(1200px)
   margin: auto
+  padding: 0 px-to-rem(15px)
+  overflow-y: hidden
 
 .section
   padding-top: px-to-rem(75px)
@@ -15,15 +17,8 @@ a
     text-align: center
 
 .row
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-  padding-bottom: 30px
+  @include flex-grid(40px)
 
-.col-50
-  flex: 0 1 calc(100% / 12 * 6 - 40px)
-  display: flex
-  flex-wrap: wrap
 
 .col-33
   flex: 0 1 calc(100% / 12 * 4 - 40px)

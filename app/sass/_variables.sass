@@ -7,10 +7,17 @@ $juice: #F7A702
 $navy: #1C6497
 $htmlfz: 14px
 
+@mixin flex-grid($offset)
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -$offset/2
+
+
+@mixin size($offset, $N)
+  flex: 0 1 calc(100% / 12 * #{$N} - #{$offset})
+  margin: $offset/2
+
 @function px-to-rem($fz)
   @return $fz/$htmlfz + rem
 
-
-@mixin flex-grid
-  
   
